@@ -7,7 +7,7 @@ from sklearn.metrics import mean_absolute_error, r2_score
 
 # 1. ЗАГРУЗКА И ПОДГОТОВКА ДАННЫХ ИЗ ВКР
 try:
-    df = pd.read_excel('vkr_landscape_data.xlsx')
+    df = pd.read_csv('vkr_landscape_data.csv')
     print("Успех: Данные ВКР успешно загружены в Python!")
 except FileNotFoundError:
     print("Запущен демонстрационный режим на сгенерированных ТИМ-данных.")
